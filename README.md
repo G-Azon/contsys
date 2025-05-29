@@ -37,6 +37,9 @@ If you have any trouble or you want to suggest an improvement you can contact me
 
 ## Changelog
 
+- ### 1.1.3
+   - Add the MIT license in *LICENSE*
+
 - ### 1.1.2
    - Small improvements in the description in the *Changelog* section
 
