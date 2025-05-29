@@ -1,6 +1,8 @@
 import subprocess
 import sys
 import ctypes
+import psutil
+from datetime import date, datetime
 
 class fonction:
     #CMD
@@ -39,3 +41,12 @@ class fonction:
             return True
         else:
             return False
+    
+    @staticmethod
+    def cpu_usage():
+        return f'{psutil.cpu_percent()}%'
+    
+    @staticmethod
+    def ram_usage():
+        return f'{psutil.virtual_memory().percent}%'
+    
