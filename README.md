@@ -37,18 +37,21 @@ If you have any trouble or you want to suggest an improvement you can contact me
 
 ## Changelog
 
-### 1.1.1
+- ### 1.1.2
+   - Small improvements in the description in the *Changelog* section
+
+- ### 1.1.1
    - Added `monitor.cpu_usage()` `monitor.ram_usage()`.
    - Setup.py migrated to pyproject.toml
    - Added the changelog section.
    - Added a new required dependency: *psutil*
 
-### 1.0.2
+- ### 1.0.2
    - Added a better description.
 
-### 1.0.1
+- ### 1.0.1
    - Added `system.iswin32()` `system.islinux()` `system.isdarwin()`.
 
-### 1.0.0
+- ### 1.0.0
    - The first version of **contsys**.
    - Added `CMD.clear()` `CMD.title()`.
