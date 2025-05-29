@@ -1,6 +1,6 @@
 import subprocess
-import os
 import sys
+import ctypes
 
 class fonction:
     #CMD
@@ -14,7 +14,7 @@ class fonction:
     @staticmethod
     def title(title):
         if sys.platform=='win32':
-            subprocess.run(f'title {title}', shell=True)
+            ctypes.windll.kernel32.SetConsoleTitleW(title)
         if sys.platform=='linux':
             subprocess.run(f'echo -ne "\033]0;{title}\007"', shell=True)
     
@@ -39,17 +39,3 @@ class fonction:
             return True
         else:
             return False
-
-    @staticmethod
-    def recupmode():
-        if sys.platform=='win32':
-            subprocess.run('shutdown.exe /r /o /f /t 0', shell=True)
-        else:
-            print('Only work on windows.')
-    
-    @staticmethod
-    def reboot():
-        if sys.platform=='win32':
-            subprocess.run('shutdown /r /t 0', shell=True)
-        elif sys.platform=='linux' or sys.platform=='darwin':
-            subprocess.run('shutdown -r now', shell=True)

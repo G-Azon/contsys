@@ -6,7 +6,7 @@ long_description= (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="contsys",
-    version="1.0.1",
+    version="1.0.2",
     description="Python library simplifying system script management with handy functions like clearing the console, setting the window title, and detecting the operating system (Windows, Linux, macOS).",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -9,5 +9,3 @@ class system:
     iswin32 = fonction.iswin32
     islinux = fonction.islinux
     isdarwin = fonction.isdarwin
-    recupmode = fonction.recupmode
-    reboot = fonction.reboot
