@@ -7,17 +7,17 @@ By **G-Azon** 🇫🇷
 ## Features
 
 - CMD:
-   - `CMD.clear` clear the console screen.
-   - `CMD.title([TITLE])` change the title of the console screen to the specified title.
+   - `CMD.clear` clears the console screen.
+   - `CMD.title([TITLE])` changes the title of the console screen to the specified title.
 
 - system:  
-   - `system.iswin32()` return **True** if the current OS is Windows, and return **False** if the current OS is not *Windows*.
-   - `system.linux()` return **True** if the current OS is *Linux Based*, and return **False** if the current OS is not *Linux Based*.
-   - `system.isdarwin()` return **True** if the current OS is MacOS, and return **False** if the current OS is not *MacOS*.
+   - `system.iswin32()` returns **True** if the current OS is *Windows*, and return **False** if the current OS is not *Windows*.
+   - `system.linux()` returns **True** if the current OS is *Linux Based*, and return **False** if the current OS is not *Linux Based*.
+   - `system.isdarwin()` returns **True** if the current OS is *MacOS*, and return **False** if the current OS is not *MacOS*.
 
 - monitor:
-   - `monitor.cpu_usage()` return the current cpu usage in percents.
-   - `monitor.ram_usage()` return the current virtual memory usage in percents.
+   - `monitor.cpu_usage()` returns the current cpu usage in percent.
+   - `monitor.ram_usage()` returns the current virtual memory usage in percent.
 
 ## Installation
 
@@ -33,21 +33,22 @@ This project is under the MIT License.
 
 ## Contact
 
-if you have any trouble or you want to suggest an amelioration you can contact me at [G-Azon782345@protonmail.com](mailto:G-Azon782345@protonmail.com)
+If you have any trouble or you want to suggest an improvement you can contact me at [G-Azon782345@protonmail.com](mailto:G-Azon782345@protonmail.com)
 
 ## Changelog
 
-### 1.1.0
-   - Add `monitor.cpu_usage()` `monitor.ram_usage()`.
-   - Add the changelog section.
-   - Add a new requiered dependency: *psutil*
+### 1.1.1
+   - Added `monitor.cpu_usage()` `monitor.ram_usage()`.
+   - Setup.py migrated to pyproject.toml
+   - Added the changelog section.
+   - Added a new required dependency: *psutil*
 
 ### 1.0.2
-   - Add a better description.
+   - Added a better description.
 
 ### 1.0.1
-   - Add `system.iswin32()` `system.islinux()` `system.isdarwin()`.
+   - Added `system.iswin32()` `system.islinux()` `system.isdarwin()`.
 
 ### 1.0.0
    - The first version of **contsys**.
-   - Add `CMD.clear()` `CMD.title()`.
+   - Added `CMD.clear()` `CMD.title()`.
