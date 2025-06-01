@@ -14,6 +14,8 @@ By **G-Azon** 🇫🇷
    - `system.iswin32()` returns **True** if the current OS is *Windows*, and return **False** if the current OS is not *Windows*.
    - `system.linux()` returns **True** if the current OS is *Linux Based*, and return **False** if the current OS is not *Linux Based*.
    - `system.isdarwin()` returns **True** if the current OS is *MacOS*, and return **False** if the current OS is not *MacOS*.
+   - `system.isadmin()` returns **True** if the script is executed as root, and returns **False** if the script is not executed as root.
+   - `system.runasadmin([TARGET], [ARGS])` run the specified python script as root.
 
 - monitor:
    - `monitor.cpu_usage()` returns the current cpu usage in percent.
@@ -37,8 +39,11 @@ If you have any trouble or you want to suggest an improvement you can contact me
 
 ## Changelog
 
+- ### 1.2.0
+   - Added `system.isadmin()` `system.runasadmin()`
+
 - ### 1.1.3
-   - Add the MIT license in *LICENSE*
+   - Added the MIT license in *LICENSE*
 
 - ### 1.1.2
    - Small improvements in the description in the *Changelog* section

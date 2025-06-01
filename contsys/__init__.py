@@ -9,6 +9,8 @@ class system:
     iswin32= fonction.iswin32
     islinux= fonction.islinux
     isdarwin= fonction.isdarwin
+    isadmin= fonction.isadmin
+    runasadmin= fonction.runasadmin
 
 class monitor:
     cpu_usage= fonction.cpu_usage
